@@ -1,66 +1,110 @@
+:root {
+  --background: #193441;
+  --tile: #D1DBBD;
+  --text: #193441;
+  --header: #193441;
+  --header-hover: #111111;
+}
 body {
-    margin: 0;
-    background-color: #555;
+  margin: 0;
+  background-color: var(--background);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333;
-    color: #007bff;
-    overflow: hidden;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+  overflow: hidden;
 }
 li {
-    float: right;
-    width: 100px;
-    text-align: center;
+  float: right;
+  width: 135px;
+  text-align: center;
+}
+.navbar {
+  font-size: 1.5rem;
 }
 .brand {
-    float: left;
-    width: 200px;
-    text-align: center;
-    display: block;
-    padding: 15px 10px;
-    font-size: 1.5rem;
+  float: left;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--tile);
 }
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 li a {
-    display: block;
-    padding: 20px 0px;
-    color: #007bff;
+  display: block;
+  padding: 20px 0px;
+  color: var(--tile);
 }
 li a:hover {
-    color: #007bff;
-    background-color: #111;
+  background-color: var(--header-hover);
 }
-.container {
-    background-color: #333;
-    color: #007bff;
-    margin: 10px;
-    padding: 5px;
-    overflow: hidden;
+.container-about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: var(--text);
+  padding: 10px;
+  overflow: hidden;
+  background-color: var(--tile);
 }
-.table {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+.container-contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: var(--text);
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: var(--header);
 }
-.table-cell {
-    display: table-cell;
-    /* background-color: aqua; */
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px 0;
-    border: solid;
+.container-work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: var(--text);
+  margin: 10px 0;
+  overflow: hidden;
 }
 .container-header {
-    text-align: center;
+  text-align: center;
+  display: block;
+  color: var(--tile);
 }
+.flex-cell {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: var(--tile);
+  text-align: center;
+  border-radius: 2%;
+  width: 275px;
+}
+
 @media (max-width: 670px) {
-    .table-cell {
-        display: block;
-        width: 100%;
-    }
+  .table-cell {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen 
+and (device-width: 320px) 
+and (device-height: 640px) 
+and (-webkit-device-pixel-ratio: 3) {
+  .table-cell {
+    display: block;
+    width: 100%;
+  }
+}
+#contact-me {
+  text-align: center;
+}
+#contact-me a {
+  margin: 0 10px;
 }
