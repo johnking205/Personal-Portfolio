@@ -92,8 +92,12 @@ li a:hover {
     display: block;
     width: 100%;
   }
+  .header li{
+    float: none;
+    margin: 0 auto;
+  }
 }
-@media screen 
+/* @media screen 
 and (device-width: 320px) 
 and (device-height: 640px) 
 and (-webkit-device-pixel-ratio: 3) {
@@ -101,7 +105,7 @@ and (-webkit-device-pixel-ratio: 3) {
     display: block;
     width: 100%;
   }
-}
+} */
 #contact-me {
   text-align: center;
 }
@@ -111,7 +115,7 @@ and (-webkit-device-pixel-ratio: 3) {
 #about-me p {
   font-size: 1.5em;
 }
-#self-summary{
+#about-me-text{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
